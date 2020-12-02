@@ -1,0 +1,32 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+h1 {
+  color: #fff;
+}
+
+.app {
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.app_videos {
+  position: relative;
+  height: 750px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 440px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+/*To hide Scroll Bar on Chrome, Safari and Opera*/
+.app_videos::-webkit-scrollbar {
+  display: none;
+}
+/*To hide Scroll Bar on IE, Edge and Firefox*/
+.app_videos {
+  -ms-overflow-style: none; /*IE and EDGE*/
+  scrollbar-width: none; /*Fire Fox*/
+}
